@@ -1,5 +1,6 @@
 # Problem
 When running Hashcat, there might be a clBuildProgram() error or device build fail. This likely has to do with your OpenCL backend device. The default hashcat (from kali) uses 'The POCL Project'. (verify this using Hashcat -I)
+![alt text](http://url/to/img.png)
 
 ## Error Messages
 - clBuildProgram(): CL_BUILD_PROGRAM_FAILURE
