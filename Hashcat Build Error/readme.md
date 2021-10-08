@@ -1,12 +1,15 @@
 # Problem
 When running Hashcat, there might be a clBuildProgram() error or device build fail. This likely has to do with your OpenCL backend device. The default hashcat (from kali) uses 'The POCL Project'. (verify this using Hashcat -I)
-![alt text](https://github.com/mushroom-hat/Troubleshoot/blob/main/Hashcat%20Build%20Error/Images/hashcat_error.png?raw=true)
+
+
 
 ## Error Messages
 - clBuildProgram(): CL_BUILD_PROGRAM_FAILURE
 - error: unknown target CPU 'generic'
 - Device #2: Kernel /usr/share/hashcat/OpenCL/shared.cl build failed.
+<br>
 
+![alt text](https://github.com/mushroom-hat/Troubleshoot/blob/main/Hashcat%20Build%20Error/Images/hashcat_error.png?raw=true)
 # Solution
 Download the opencl runtime in the current directory
 ```console
