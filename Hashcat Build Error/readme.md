@@ -29,7 +29,7 @@ mushroomh4t@kali:~$ sudo bash opencl_runtime_16.1.2_x64_rh_6.4.0.37/install.sh
 ```
 <br>
 
-After installing, run hashcat with the -I flag, if the installation is successful, you should an OpenCL Platform with Intel(R) Corporation as the Vendor. 
+After installing, run hashcat with the -I flag, if the installation is successful, you should have an OpenCL Platform with Intel(R) Corporation as the Vendor. 
 ```console
 mushroomh4t@kali:~$ hashcat -I
 ```
