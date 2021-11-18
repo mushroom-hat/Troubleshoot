@@ -14,6 +14,11 @@ $ sudo blkid
 
 4) Edit ***/etc/fstab*** and replace the UUID of the swap partition to the one you just copied.
 
-5) Do the same with ***/etc/initramfs-tools/conf.d/resume***, edit the UUID in the file.
+5) Do the same with ***/etc/initramfs-tools/conf.d/resume***, edit the UUID in the file. 
+
+6) Update initramfs (this step comes after step 5 where you have edited the initrams resume file)
+```zsh
+$ update-initramfs -u
+```
 
 6) Reboot your machine, it should be boot up significantly faster now
