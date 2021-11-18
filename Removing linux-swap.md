@@ -6,13 +6,14 @@ If you accidentally deleted linux-swap partition in gparted or similar disk mana
 
 # Solution
 1) Create a new swap partition. You can do so by following this link https://askubuntu.com/questions/180730/how-do-i-restore-a-swap-partition-i-accidentally-deleted. 
-2) Check the UUID of the new swap partition
+2) Check the UUID of the new swap partition and copy the UUID (inside the quotation) of the swap partition, labeled TYPE="swap"
 ```zsh
 $ blkid
 ```
 <br>
 
-3) Copy the UUID (inside the quotation) of the swap partition, TYPE="swap"
 4) Edit /etc/fstab and replace the UUID of the swap partition to the one you just copied.
+
 5) Do the same with ***/etc/initramfs-tools/conf.d/resume***, edit the UUID in the file.
+
 6) Reboot your machine, it should be boot up significantly faster now
