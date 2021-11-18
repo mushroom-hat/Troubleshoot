@@ -12,7 +12,7 @@ $ blkid
 ```
 <br>
 
-4) Edit /etc/fstab and replace the UUID of the swap partition to the one you just copied.
+4) Edit ***/etc/fstab*** and replace the UUID of the swap partition to the one you just copied.
 
 5) Do the same with ***/etc/initramfs-tools/conf.d/resume***, edit the UUID in the file.
 
