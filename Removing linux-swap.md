@@ -8,7 +8,7 @@ If you accidentally deleted linux-swap partition in gparted or similar disk mana
 1) Create a new swap partition. You can do so by following this link https://askubuntu.com/questions/180730/how-do-i-restore-a-swap-partition-i-accidentally-deleted. 
 2) Check the UUID of the new swap partition and copy the UUID (inside the quotation) of the swap partition, labeled TYPE="swap"
 ```zsh
-$ blkid
+$ sudo blkid
 ```
 <br>
 
